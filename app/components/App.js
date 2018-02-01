@@ -1,4 +1,6 @@
-import React from "react";
+import React from 'react';
+import Column2d from './charts/Column2D'
+import Area2D from './charts/Area2D';
 
 export default class App extends React.Component {
     render() {
@@ -108,7 +110,9 @@ export default class App extends React.Component {
                         </div>
 
                         {/* replace this canvas with FusionChart */}
-                        <canvas class="my-4" id="myChart" width="900" height="380"></canvas>
+                        <div><Column2d /></div>
+                        <div><Area2D /></div>
+                        {/* <canvas class="my-4" id="myChart" width="900" height="380"></canvas> */}
 
                         <h2>Section title</h2>
                         <div class="table-responsive">
